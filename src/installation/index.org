@@ -40,9 +40,44 @@
    sudo apt-get install -y git 
    #+END_SRC
 
+** Download latest moodle source 
+   #+BEGIN_SRC command
+   cd /opt/
+   wget https://download.moodle.org/download.php/stable32/moodle-latest-32.zip
+   unzip moodle-latest-32.zip
+   #+END_SRC
+
+** Set up moodle
+   #+BEGIN_SRC command
+   sudo cp -R /opt/moodle /var/www/html/
+   sudo mkdir /var/moodledata 
+   sudo chown -R www-data /var/moodledata
+   sudo chmod -R 777 /var/moodledata
+   sudo chmod -R 0755 /var/www/html/moodle
+   #+END_SRC
+
+** Set up MySQL server 
+   + Set InnoDB as default storage engine 
+     #+BEGIN_SRC command
+     sudo vim /etc/mysql/my.cnf
+     #+END_SRC
+   + Add the following line below [mysld] section
+     #+BEGIN_SRC command
+     default-storage-engine = innodb     
+     #+END_SRC
+   + Restart mysql
+     #+BEGIN_SRC command
+     sudo service mysql restart
+     #+END_SRC
+   + 
+
+
+
 * References
 
   + [[https://moodle.org/][Moodle Official website]]
   + [[https://docs.moodle.org/32/en/Main_page][Teaching with moodle]]
   + [[https://docs.moodle.org/32/en/Installing_Moodle#Requirements][Requirements - Hardware and Software]]
+  + [[https://docs.moodle.org/26/en/Step-by-step_Installation_Guide_for_Ubuntu][Step by Step installation of Moodle]]
   + [[http://stackoverflow.com/questions/7739645/install-mysql-on-ubuntu-without-password-prompt][Install mysql without password prompt]]
+  
