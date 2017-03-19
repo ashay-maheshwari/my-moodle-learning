@@ -80,7 +80,6 @@
    + 
 
 
-
 ** Creatle mysql user 
    + Login to mysq shell 
      #+BEGIN_SRC command
@@ -100,7 +99,6 @@
      quit
      #+END_SRC
 
-
 ** Complete Setup 
    + Make config.php file writeable using the command below 
      #+BEGIN_SRC command
@@ -108,7 +106,16 @@
      #+END_SRC
    + Open your browser and go to http://IP-ADDRESS-OF-SERVER/moodle
    + Follow the settings as given in prompt
-     
+     + Choose a language  - English
+     + Web Address - http://serverip/moodle
+     + Moodle Directory - /var/www/html/moodle
+     + Data Directory - /var/www/html/moodle
+     + Data directory - /var/moodledta
+     + Database Driver - Improved MySQL (native/mysqli)
+    
+        
+      
+
 * References
 
   + [[https://moodle.org/][Moodle Official website]]
