@@ -1,0 +1,48 @@
+#+TITLE: Moodle Installation on Ubuntu 14.04 
+#+DATE: [2017-03-19 Wed]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ./org-templates/level-0.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+
+
+* Introduction 
+  Moodle is a Open source learning platform designed to provide
+  educators, administrators and learners with a single robust, secure
+  and integrated system to create personalised learning environments.
+  You can download the software and install it on your own server for
+  free use.
+
+* Installation 
+
+** Hardware and Software Requirements 
+   Read the minimum requirement recommendation from moodle [[https://docs.moodle.org/32/en/Installing_Moodle#Requirements][here]] .
+
+
+** Install Apache/MySQL/PHP 
+
+   #+BEGIN_SRC commands
+   sudo apt-get update
+   sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password secret-password'
+   sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password secret-password'
+   sudo apt-get -y install apache2 mysql-client mysql-server php5 
+   #+END_SRC
+
+** Install additional softwares    
+   
+   #+BEGIN_SRC commands
+   sudo apt-get -y install graphviz aspell php5-pspell php5-curl php5-gd php5-intl php5-mysql php5-xmlrpc php5-ldap
+   #+END_SRC
+   
+** Install git software
+   #+BEGIN_SRC command
+   sudo apt-get install -y git 
+   #+END_SRC
+
+* References
+
+  + [[https://moodle.org/][Moodle Official website]]
+  + [[https://docs.moodle.org/32/en/Main_page][Teaching with moodle]]
+  + [[https://docs.moodle.org/32/en/Installing_Moodle#Requirements][Requirements - Hardware and Software]]
+  + [[http://stackoverflow.com/questions/7739645/install-mysql-on-ubuntu-without-password-prompt][Install mysql without password prompt]]
