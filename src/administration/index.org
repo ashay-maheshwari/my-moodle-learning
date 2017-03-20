@@ -6,3 +6,12 @@
 #+options: ^:nil
 #+LATEX: Literal LaTeX code for export
 
+* Introduction
+  This document deals with administrative actions requried to
+  manage a moodle based site.
+
+* Add a user to your site 
+  
+
+* References
+  + [[https://docs.moodle.org/32/en/Add_users][Add a user to a site]]

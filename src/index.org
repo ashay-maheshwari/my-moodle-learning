@@ -6,3 +6,5 @@
 #+options: ^:nil
 #+LATEX: Literal LaTeX code for export
 
+* References 
+  + [[https://moodle.net/stats/][Popularity stats of moodle]]

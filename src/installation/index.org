@@ -149,4 +149,4 @@
   + [[https://docs.moodle.org/32/en/Installing_Moodle#Requirements][Requirements - Hardware and Software]]
   + [[https://docs.moodle.org/26/en/Step-by-step_Installation_Guide_for_Ubuntu][Step by Step installation of Moodle]]
   + [[http://stackoverflow.com/questions/7739645/install-mysql-on-ubuntu-without-password-prompt][Install mysql without password prompt]]
-  
+  + [[https://docs.moodle.org/32/en/Main_page][Moodle document overview]]
