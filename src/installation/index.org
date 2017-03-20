@@ -49,9 +49,13 @@
    #+END_SRC
 
 ** Download latest moodle source 
+   + Visit https://download.moodle.org/ and downloaded moodle 3.1.5 in
+     zip format.
+   + Copy the zip file in /opt/
+   + Extract the contents
    #+BEGIN_SRC command
+   cp mooodle-*.zip /opt/
    cd /opt/
-   wget https://download.moodle.org/download.php/stable32/moodle-latest-32.zip
    unzip moodle-latest-32.zip
    #+END_SRC
 
@@ -106,15 +110,37 @@
      #+END_SRC
    + Open your browser and go to http://IP-ADDRESS-OF-SERVER/moodle
    + Follow the settings as given in prompt
-     + Choose a language  - English
-     + Web Address - http://serverip/moodle
-     + Moodle Directory - /var/www/html/moodle
-     + Data Directory - /var/www/html/moodle
-     + Data directory - /var/moodledta
-     + Database Driver - Improved MySQL (native/mysqli)
     
+   |----------------------------+--------------------------------|
+   | Setting Name               | Setting choice                 |
+   |----------------------------+--------------------------------|
+   |                            |                                |
+   |----------------------------+--------------------------------|
+   | Choose a language  English | English                        |
+   |----------------------------+--------------------------------|
+   | Web Address                | http://serverip/moodle         |
+   |----------------------------+--------------------------------|
+   | Moodle Directory           | /var/www/html/moodle           |
+   |----------------------------+--------------------------------|
+   | Data Directory             | /var/www/html/moodle           |
+   |----------------------------+--------------------------------|
+   | Data directory             | /var/moodledta                 |
+   |----------------------------+--------------------------------|
+   | Database Driver            | Improved MySQL (native/mysqli) |
+   |----------------------------+--------------------------------|
+   | Database host              | localhost                      |
+   |----------------------------+--------------------------------|
+   | Database name              | moodle                         |
+   |----------------------------+--------------------------------|
+   | Database user              | moodledude                     |
+   |----------------------------+--------------------------------|
+   | Database password          | passwordformoodledude          |
+   |----------------------------+--------------------------------|
+   | Admin Details              |                                |
+   |----------------------------+--------------------------------|
+   
         
-      
+     
 
 * References
 
