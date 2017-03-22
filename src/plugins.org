@@ -1,0 +1,28 @@
+#+TITLE: Plugins used in my moodle 
+#+DATE: [2017-03-22 Thu]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ./org-templates/level-0.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+
+* Introduction
+  This document reveals the plugins used in custom moodle.
+
+* Steps to install Plugin 
+  + Download the plugin to be installed.
+  + Login as admin.
+  + Site administration --> Plugins --> Install Plugins
+  + Upload the Plugin zip file
+  + Select the plugin type (if known) else ignore.
+  + Click Install 
+  + Moodle will guide you through till it upgrades the database.
+
+* Fullscreen toggle button
+  + [[https://moodle.org/plugins/local_fullscreen][Description and Downloads]]
+  
+
+
+* References 
+  + [[https://docs.moodle.org/31/en/Installing_plugins][Install Plugin]]
+
